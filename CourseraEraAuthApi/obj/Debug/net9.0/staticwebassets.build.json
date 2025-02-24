@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "r99AGkhilXVvsqKnmlTUIngsAsfrvb/dC+uWgQlVGyk=",
+  "Source": "CourseraEraAuthApi",
+  "BasePath": "_content/CourseraEraAuthApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

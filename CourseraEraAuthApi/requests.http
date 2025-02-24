@@ -1,0 +1,47 @@
+@CourseraEraAuthApi_HostAddress = http://localhost:5165
+
+### Create a new user
+POST {{CourseraEraAuthApi_HostAddress}}/register
+Content-Type: application/json
+
+{
+  "email": "testuser@example.com",
+  "password": "Password123!"
+}
+
+### Create a new admin user
+POST {{CourseraEraAuthApi_HostAddress}}/create-admin
+Content-Type: application/json
+
+{
+  "adminEmail": "admin@example.com",
+  "adminPassword": "Admin@123"
+}
+
+### Log in the user
+POST {{CourseraEraAuthApi_HostAddress}}/login?useCookies=true
+Content-Type: application/json
+
+{
+  "email": "testuser@example.com",
+  "password": "Password123!"
+}
+
+### Log in the admin user
+POST {{CourseraEraAuthApi_HostAddress}}/login?useCookies=true
+Content-Type: application/json
+
+{
+  "email": "admin@example.com",
+  "password": "Admin@123"
+}
+
+### Access the unprotected root
+GET {{CourseraEraAuthApi_HostAddress}}/
+
+### Access the protected root
+GET {{CourseraEraAuthApi_HostAddress}}/protected
+
+### Access the admin root
+GET {{CourseraEraAuthApi_HostAddress}}/admin
+

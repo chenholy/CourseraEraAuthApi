@@ -1,0 +1,28 @@
+@CourseraEraAuthApi_HostAddress = http://localhost:5165
+
+### Create Admin User with Valid Data
+POST {{CourseraEraAuthApi_HostAddress}}/create-admin
+Content-Type: application/json
+
+{
+  "adminEmail": "admin@example.com",
+  "adminPassword": "Admin@123"
+}
+
+### Create Admin User with XSS Attempt
+POST {{CourseraEraAuthApi_HostAddress}}/create-admin
+Content-Type: application/json
+
+{
+  "adminEmail": "<script>alert('xss')</script>@example.com",
+  "adminPassword": "Admin@123"
+}
+
+### Create Admin User with SQL Injection Attempt
+POST {{CourseraEraAuthApi_HostAddress}}/create-admin
+Content-Type: application/json
+
+{
+  "adminEmail": "'; DROP TABLE Users; --@example.com",
+  "adminPassword": "Admin@123"
+}

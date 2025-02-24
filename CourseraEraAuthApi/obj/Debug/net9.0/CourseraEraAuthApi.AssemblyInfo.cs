@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CourseraEraAuthApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+029d77be6abee31e6480b288bcdecf40f5d8441e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CourseraEraAuthApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CourseraEraAuthApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
